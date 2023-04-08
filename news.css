@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,200;1,100&display=swap');
+
+    *{
+        box-sizing: border-box;
+        text-decoration: none !important;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+    }
+    button{
+        border: none;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: #000000;
+    }
+
+.c-1{
+    display: flex;
+    justify-content: space-between !important;
+}
+.logo{
+    margin-left: 55px;
+    margin-top: 27px;
+    color: white;
+    font-weight: 800;
+    font-size: 29px;
+}
+.logo:hover{
+    color: #FA8305 !important;
+}
+.nav-a:hover{
+    color: #DC7000;
+}
+.nav-c:hover{
+    color: #DC7000;
+}
+.nav-b:hover{
+    color: BLACK;
+    transform: rotateX(30deg);
+
+}
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.sp-1:hover{
+color: #DC7000;
+
+}
+.nav-ing{
+    margin-top: 20px;
+}
+.nav-b{
+    /* margin-top: 27px; */
+    margin-right:55px;
+    border: none;
+    background: #FA9021;
+    border-radius: 6px;
+    padding: 10px 30px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 19.5px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.nav-a{
+    /* margin-top: 27px; */
+    margin-right: 80px;
+    color: white;
+    font-size: 16px;
+    
+}
+.nav-c{
+    /* margin-top: 27px; */
+    margin-right: 37px;
+    color: white;
+
+}
+.navbar{
+position: relative !important;
+}
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    height: 0;
+    transition: height .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu li{
+padding: 0.7rem;
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 45px;
+}
+
+
+@media (max-width: 990px){
+    .nav-ing{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display:block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+.dropdown_menu.open{
+    height: 240px;
+}
+.inp{
+    display: flex;
+    position: relative;
+}
+.inp input{
+height: 48px;
+padding-right: 290px;
+padding-top: 38px;
+padding-bottom: 30px;
+border-radius: 8px;
+/* position: relative; */
+margin-top: 71px;
+margin-left: 370px;
+font-size: 13px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color: #000000 !important;
+}
+.inp button{
+background: #DC7000 !important;
+border-radius: 8px;
+border: none !important;
+height: 37px;
+width: 134px;
+
+border-radius: 8px;
+position: absolute;
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+transition: 1s;
+top: 88px;
+left: 670px;
+padding: 10px 15px;
+}
+.inp button:hover{
+    background-color: black  !important;
+    color: white;
+    border-radius: 0px;
+}
+
+
+.input input, select, textarea{
+    color: #000000;
+}
+.email{
+    display: flex;
+    margin-left: 135px;
+    background: rgba(28, 20, 15, 1);
+    border-radius: 15px;
+    margin-top: 75px;
+    margin-right: 135px;
+}
+.shesavali{
+   margin-left: 135px; 
+}
+
+.txt{
+    padding-top: 40px;
+    padding-bottom:42px;
+    padding-left: 52px;
+}
+.txt-p{
+    font-size: 21px;
+    font-weight: 300 !important;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+.txt h1{
+font-size: 45px;
+font-weight: 500;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+
+.photo-container {
+    perspective: 1000px;
+  }
+  
+  .photo-container img {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .photo-container:hover img {
+    transform:rotateX(20deg);
+  }
+  .space{
+    padding-bottom:160px;
+  }
+  .sp-3:hover{
+background-color: #FB9E3C;
+border-radius: 0px;
+color: black;
+font-weight: 600;
+  }
+  @media (max-width: 990px){
+    .shesavali{
+        text-align: center;
+        margin: 0;
+    }
+    .email{
+        width: 375px;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .txt h1, p{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .inp input{
+        margin: 0px;
+        padding-right: 100px !important;
+        padding-top: 38px;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+
+    .inp button{
+        left: 177px;
+        top: 18px;
+        padding: 2px 2px;
+        width: 90px;
+    }
+    .guka{
+        width: 300px;
+    }
+    .txt h1{
+        text-align: left;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+  }
+
+  .tracker{
+    text-align: center;
+    margin-top:119px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  .tracker h1{
+    margin-top: 15px;
+    margin-bottom: 13px;
+    font-size: 43px;
+    font-weight: 800;
+  }
+  .tracker p{
+    font-size: 20px;
+  }
+  .search-container{
+    margin-top: 74px;
+    position: relative;
+
+
+  }
+  .search-container input{
+    width: 420px;
+    height: 49px;
+    background: rgba(28, 20, 15, 1);
+    border: none;
+    border-radius:10px;
+    text-align: center;
+  }
+  .search{
+    background: rgba(28, 20, 15, 1);
+    padding-left: 0px;
+  }
+  .search-container button{
+    background: rgba(28, 20, 15, 1);
+    top:10px;
+    left: 433px;
+    position: absolute;
+  }
+.cl-1{
+    display: flex;
+}
+.john p{
+    margin-top:21px;
+    padding: 8px 28px;
+    background: rgba(35, 81, 245, 1);
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+}
+.john{
+    margin-right: 19px;
+}
+.min{
+margin-top: 30px;
+}
+.kontent h1{
+  margin-top: 21px;
+  margin-bottom: 32px;
+  font-weight: 800;
+  font-size: 39px;
+}
+.kontent p{
+    line-height: 19px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.emo{
+    margin-top:44px;
+}
+.xaza{
+    height: 1px;
+    width: 760px;
+    background: rgba(165, 165, 165, 1);
+    border: 0.7px solid rgba(165, 165, 165, 1);
+    margin-top:90px;
+    margin-bottom: 90px;
+
+}
+.tyupebi{
+    margin-top:103px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tyupa{
+    margin-left: 133px;
+    margin-right: 70px;
+}
+.tyupa img{
+    height: 400px;
+    width: 760px;
+}
+.isa{
+    display: flex;
+
+}
+.aja{
+    display: flex;
+    margin-bottom: 65px;
+}
+.aja img{
+width: 210px;
+height: 210px;
+}
+.johnp p{
+padding: 7px 25px;
+background: #FF8484;
+}
+.isa{
+    margin-top: 15px;
+    margin-left: 31px;
+}
+.xuti{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.aja h2{
+    margin-left: 31px;
+    font-weight: 700;
+}
+.johnb p{
+    padding: 7px 25px;
+    background: rgba(35, 81, 245, 1);
+}
+.johny p{
+    background: rgba(255, 124, 50, 1);
+    padding: 7px 25px;
+}
+.johng p{
+    background: rgba(35, 165, 79, 1);
+    padding: 7px 25px;
+}
+.johnr p{
+    padding: 7px 25px;
+    background: rgba(153, 33, 195, 1);
+}
+@media (max-width: 990px){
+
+    .tracker{
+        margin: 0px;
+    }
+    .tyupa{
+        margin: 0px;
+    }
+
+    .tyupa img{
+        width: 375px;
+        height: 250px;
+    }
+    .kontent h1{
+        font-size: 21px;
+    }
+    .kontent p{
+        margin: 0px;
+        text-align: left;
+        font-size: 12px;
+    }
+    .xaza{
+        width: 375px;
+    }
+    .search-container input{
+        width: 300px;
+    }
+    .search-container button{
+        left: 60px;
+    }
+    .aja{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .aja img{
+        margin: auto;
+    }
+    .isa{
+        margin-left: 90px;
+    }
+    .aja h2{
+        margin-left: 5px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+}
+@media (max-width: 600px){
+    .search-container button{
+        left: 160px;
+    }
+}
+@media (max-width: 400px){
+    .search-container button{
+        left: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* FOOTER/---------------------------------------------------------------------- */
+footer{
+    background: #000000;
+    text-decoration: none !important;
+    color: white !important;
+}
+.c-4{
+    display: flex;
+
+}
+.xazi{
+    border: 0.8px solid rgba(210, 210, 210, 1);
+    max-width: 1864px;
+    border: 0.8px solid #D2D2D2;
+}
+.c-all{
+    display: flex;
+}
+.c-10 h4{
+font-size: 24px;
+font-weight: 800;
+line-height: 37px;
+letter-spacing: 0em;
+padding-bottom: 10px;
+}
+.c-10{
+    padding-top: 73px;
+    padding-left: 101px;
+    padding-bottom: 62px;
+}
+.c-20{
+display: flex;
+flex-direction: column;
+color: white;
+padding-left: 70px;
+padding-top: 79px;
+padding-bottom: 60px;
+}
+.c-20 h6{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    color: white;
+    padding-bottom: 10px;
+}
+.c-3{
+    display: flex;
+flex-direction: column;
+color: white !important;
+padding-left: 100px;
+padding-top: 79px;
+
+}
+.c-3 h6{
+    color: white;
+    padding-bottom: 10px;
+}
+.c-4 img{
+    height: 60px;
+}
+.c-4{
+    padding-top: 200px;
+    padding-left: 100px;
+}
+.copyr{
+    text-align: center !important;
+    padding-top:29px;
+}
+@media (max-width: 990px){
+    .c-all{
+        flex-wrap: wrap;
+    }
+    .c-10{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .c-20{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-left: 130px;
+        padding-top: 30px;
+    }
+    .c-3{
+        padding: 0;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    .c-3 h6{
+        text-align: center;
+    }
+    .c-4{
+        padding: 0;
+        margin:auto;
+    }
+    .xazi{
+        width: 370px;
+    }
+
+    .inp input{
+        margin: 0px;
+        padding-right: 100px !important;
+        padding-top: 38px;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+
+    .inp button{
+        left: 177px;
+        top: 18px;
+        padding: 2px 2px;
+        width: 90px;
+    }
+    .guka{
+        width: 300px;
+    }
+    .email{
+        width: 300px;
+    }
+    .xazi{
+        display: none;
+    }
+}
+@media (max-width: 340px){
+    .guka{
+        display: none;
+    }
+    .kontent h1{
+        font-size: 15px;
+    }
+    .kontent p{
+        font-size: 10px;
+    }
+    .xaza{
+        width: 290px;
+    }
+}
